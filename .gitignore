@@ -1,0 +1,17 @@
+# 敏感数据文件 — 防止误提交
+names_complete.txt
+research_batch_*.txt
+batch_*_result.txt
+results_*.txt
+专家信息汇总.csv
+
+# 原始名单及办公文档
+*.docx
+*.xlsx
+
+# Node
+node_modules/
+
+# 系统文件
+.DS_Store
+Thumbs.db
