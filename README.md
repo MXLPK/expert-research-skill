@@ -10,9 +10,13 @@
 
 ## 快速部署
 
+在目标项目的根目录下执行，一行命令完成 clone + 安装 + 清理：
+
 ```bash
-mkdir -p .claude/skills/expert-research && cp SKILL.md .claude/skills/expert-research/ && cp -r scripts .claude/skills/expert-research/
+git clone https://github.com/MXLPK/expert-research-skill.git /tmp/expert-research-skill && mkdir -p .claude/skills/expert-research && cp /tmp/expert-research-skill/SKILL.md .claude/skills/expert-research/ && cp -r /tmp/expert-research-skill/scripts .claude/skills/expert-research/ && rm -rf /tmp/expert-research-skill && echo "✅ expert-research skill 部署完成"
 ```
+
+> **注意**：仓库为私有，需先在 GitHub 上将对方添加为 collaborator，或让对方配置有权限的 SSH key / token。
 
 ## 工作流概览
 
